@@ -1,0 +1,627 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+
+header .head {
+    max-width: 1150px;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .head .logo{
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+header .head .logo img {
+    width: 100%;
+}
+header .head .btn {
+    display: flex;
+    align-items: center;
+}
+header .head .btn button{
+    outline: none;
+    padding: 9px 15px 9px 15px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    font-size: 13px;
+}
+header .head .btn .btn-1 {
+    background-color: rgb(38, 93, 211);
+    margin-left: 12px;
+}
+header .head .btn .btn-2 {
+    background-color: rgb(92, 218, 66);
+    margin-left: 15px;
+}
+header .head .btn .btn-1:hover{
+    opacity: 0.9;
+}
+header .head .btn .btn-2:hover{
+    opacity: 0.9;
+}
+
+/* navbar */
+
+.nav-bar {
+    background-color: rgb(38, 93, 211);
+    width: 100%;
+}
+.nav-bar .menu {
+    max-width: 1150px;
+    margin: auto;
+    padding-top: 10px;
+}
+.nav-bar  .menu ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* list-style-type: none; */
+    gap: 20px;
+}
+.nav-bar  .menu ul li {
+    margin-bottom: 10px;
+}
+ .menu ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+ .menu ul li a.icon {
+    padding: 5px;
+    margin-left: 50px;
+}
+ .menu ul li a .down{
+    font-size: 10px;
+}
+ .menu ul li a.icon i {
+    font-size: 20px;
+}
+.menu ul li a.actives{
+    color: yellow;
+}
+.menu ul li a:hover {
+    color: yellow;
+}
+.drop-down {
+    background-color: white;
+    border: 2px solid rgb(202, 202, 202);
+    position: absolute;
+    top: 70%;
+    display: none;
+}
+.drop-down ul {  
+    width: 250px;
+    display: block;
+}
+.drop-down ul li{  
+    margin: 1px;
+    padding: 10px 20px 10px 20px;
+}
+.drop-down ul li a{  
+    color: gray;
+}
+.menu ul li:hover .drop-down{
+    display: block;
+}
+.drop-down ul li a:hover{
+    color: black;
+}
+
+
+.btn-search {
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid rgba(201, 194, 194, 0.808);
+    float: left;
+}
+form.example input[type=text] {
+    float: left;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    width: 70%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: rgb(92, 218, 66);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background:rgb(94, 199, 73);
+  }
+.menu ul li a:hover .btn-search{
+    display: block;
+}
+/* banner */
+
+.banner {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* body */
+
+.body {
+    max-width: 1150px;
+    margin: auto;
+}
+.body h2 {
+    text-align: center;
+    color: rgb(38, 93, 211);
+}
+.body .btn button.btn-box {
+    outline: none;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(231, 218, 29);
+    cursor: pointer;
+}
+
+.body .btn .btn-box1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.body .btn .btn-box1 .btn1 {
+    margin-left: 16%;
+    background-color: rgb(92, 218, 66);
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+.body .btn .btn-box1 .btn2 {
+    margin-right: 16%;
+    background-color: rgb(112, 66, 218);
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+.body .btn .btn-box1 .btn2:hover {
+    opacity: 0.9;
+}
+.body .btn .btn-box1 .btn1:hover {
+    opacity: 0.9;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table tr td {
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.body .btn-txt {
+    width: 100%;
+    display: flex;
+}
+.body .btn-txt div {
+    margin: 70px;
+    background-color: rgb(38, 93, 211);
+    padding:10px 20px 10px 20px;
+    display: flex;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.body .btn-txt div:hover {
+    opacity: 0.9;
+}
+
+.collapsible {
+    border: 2px solid black;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.collapsible span {
+    color: gray;
+    cursor: pointer;
+    float: right;
+} 
+
+.btn-group {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+.btn-group .group1 {
+    width: 50%;
+}
+.btn-group .group1 button{
+    border: none;
+    outline: none;
+    padding: 8px 40px 8px 40px;
+    background-color: rgb(92, 218, 66);
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-group .group2 {
+    width: 50%;
+}
+.btn-group .group2 .btn-box{
+    padding: 8px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border: none;
+    outline: none;
+    background-color: rgb(92, 218, 66);
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.btn-group .group1 button:hover,.btn-group .group2 button:hover {
+    opacity: 0.9;
+}
+
+.banner2 {
+    width: 100%;
+}
+.banner2 img {
+    width: 95%;
+    margin: auto;
+}
+
+.collap {
+    background-color: none;
+    border:none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.collap:hover {
+    color: rgb(204, 204, 81);
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.content .txt-box {
+    margin: auto;
+    width: 75%;
+    background-color: rgb(240, 240, 240);
+}
+.content .txt-box img {
+    width: 100%;
+}
+.active {
+    margin-bottom: 10px;
+    background-color: #d6e0df;
+    color: white;
+    border: 1px solid yellow;
+  }
+
+  .title-1 a {
+    color: red;
+  }
+.title-1 a:hover{
+    color: rgb(187, 187, 40);
+}
+
+.cart-box .txt-box {
+    margin-top: 50px;
+    display: flex;
+}
+.cart-box .txt-box .txt-cart {
+    text-align: center;
+    width: 26%;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.cart-box .txt-box .txt-cart img {
+    margin: auto;
+    width: 40%;
+    border-radius: 50%;
+}
+.cart-box .txt-box .txt-cart h3 {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+    color: red;
+}
+.cart-box .txt-box .txt-cart h3:hover{
+    color: rgb(165, 165, 21);
+}
+.cart-box .txt-box .txt-cart i{
+    color: rgb(58, 168, 24);
+}
+
+footer{
+    width: 100%;
+    float: left;
+    background-color: rgb(48, 45, 45);
+}
+footer .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    margin:auto;
+    max-width: 1150px;
+}
+
+footer .contact .txt-box {
+    font-size: 15;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+footer .contact .txt-box i {
+    color: red;
+    font-size: 15px;
+}
+
+footer .contact .txt-box ul li {
+    /* list-style: none; */
+    padding: 12px;
+}
+footer .contact .txt-box ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+footer .contact .txt-box hr {
+    color:red;
+}
+
+.footer {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(105, 104, 104);
+}
+
+header .closebtn {
+    display: none;
+    
+}
+@media screen and (max-width: 767px) {
+    header .head{
+        display: inline-block;
+    }
+    header .head .logo{
+        width: 100%;
+    }
+    header .head .logo img{
+        width: 250px;
+        margin: auto;
+    }
+    header .head .btn{
+        width: 100%;
+        margin: 10px auto;
+    }
+    header .head .btn .btn-1,
+    header .head .btn .btn-2{
+        width: 40%;
+        margin: auto;
+    }
+    .nav-bar .menu {
+        height: 100vh;
+        max-width: 250px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        box-shadow: 1px 3px 1px 0px gainsboro;
+        z-index: 100;
+    }
+    .nav-bar .menu .fa-times {
+        position: absolute;
+        top: 0.5%;
+        right: 2%;
+        width: 35px;
+        height: 35px;
+        border: 2px solid #000000;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    .menu ul {
+        margin-top: 10px;
+      }
+    .menu ul li {
+        width: 100%;
+        /* background-color: yellow; */
+      }
+    .menu ul li a {
+        color: gray;
+        text-decoration: none;
+        font-size: 12px;
+        transition: 0.3s;
+        padding: 25px;
+      }
+      
+    .menu ul li a:hover {
+        color:black;
+      }
+    
+    .icon{
+        display: none;
+    }
+    .menu ul li:hover .drop-down{
+        display: none;
+    }
+    .body h2 {
+        font-size: 22px;
+    }
+    .body .btn .btn-box1 {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 13px;
+    }
+    .body .btn .btn-box1 .btn1 { 
+        margin: 10px;
+        background-color: rgb(92, 218, 66);
+        cursor: pointer;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+    }
+    .body .btn .btn-box1 .btn2 {  
+        margin: 10px;     
+        background-color: rgb(112, 66, 218);
+        cursor: pointer;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+    }
+    table{
+        margin-left: 25px;
+        font-size: 13px;
+        width: 90%;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+    }
+    table tr td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    .body .btn-txt {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }.body .btn-txt div {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        font-size: 15px;
+        width: 70%;
+    }
+    .btn-group{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-group .group1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-group .group2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .btn-group  button { 
+        margin: 30px;
+    }
+    .title .title-col {
+        margin: auto;
+        width: 95%;
+        text-align: center;
+    }
+    .title .title-col .collap {
+        font-size: 15px;
+    }
+    
+    .title .title-1{
+        width: 95%;
+        margin: auto;
+    }
+    .cart-box .txt-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cart-box .txt-box .txt-cart {
+        width: 85%;
+    }
+    .cart-box .txt-box .txt-cart img {
+        width: 30%;
+        border-radius: 50%;
+    }
+    .cart-box h1 {
+        font-size: 20px;
+    }
+    footer .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer .contact .txt-box {
+        overflow: hidden;
+    }
+    footer .contact .txt-box p {
+        font-size: 13px;
+    }
+    .footer h4{
+        text-align: center;
+    }
+    .collapsible {
+        max-width: 95%;
+        margin-left: 3%;
+    }
+
+    /* 1.html */
+    .txt-title {
+        width: 95%;
+    }
+    .txt-title h3 {
+        font-size: 15px;
+    }
+    
+}
+
